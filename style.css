@@ -23,6 +23,22 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* bootstrap styles */
+.navbar-brand {
+  color: white;
+}
+.navbar-brand.navBrand-scroll {
+  color: rgb(40, 40, 40);
+}
+.fixed-top.scroll {
+  transition: all 0.3s ease-out;
+  background-color: var(--bg-alpha-white);
+}
+
+.nav-link.nav-scroll {
+  color: var(--second-alfa-color);
+}
+
 /* own styles */
 a {
   color: var(--link-color);
@@ -34,13 +50,16 @@ a:hover {
 
 .btn-contact {
   position: relative;
-  top: 43rem;
+  top: 91vh;
   z-index: 1;
   left: 4rem;
   height: 3rem;
   width: 10rem;
   border-radius: 0.4rem;
   background-color: var(--first-color);
+  text-align: center;
+  font-size: larger;
+  font-weight: 700;
 }
 .btn-contact:active {
   box-shadow: none;
@@ -89,7 +108,7 @@ a:hover {
 }
 .nav-link {
   margin-left: 0.5rem;
-  color: var(--bg-white);
+  color: var(--bg-white); /**/
   font-weight: bold;
 }
 .nav-link:hover {
