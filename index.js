@@ -28,15 +28,23 @@ const isMenuColapse = function hamburguerMenu(menu, icoMenu) {
     const $panel = d.querySelector(".navbar-collapse");
 
     if (e.target.matches(menu) || e.target.matches(icoMenu)) {
-      console.log("e.target :>> ", e.target);
       d.querySelector(menu).classList.toggle("show");
       d.querySelector(icoMenu).classList.toggle("show");
     } else {
-      console.log("e.target en else:>> ", e.target);
       $panel.classList.remove("show");
     }
   });
 };
+
+function showOverlay(card) {
+  let overlay = card.previousElementSibling;
+  overlay.classList.add("service-selected");
+}
+
+function hideOverlay(card) {
+  let overlay = card.previousElementSibling;
+  overlay.classList.remove("service-selected");
+}
 
 w.addEventListener("DOMContentLoaded", (e) => {
   isMenuColapse(".navbar-toggler", ".navbar-toggler-icon");

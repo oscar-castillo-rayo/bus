@@ -78,6 +78,20 @@ a:hover {
   font-weight: bold;
 }
 
+.btn-modal-services {
+  background-color: var(--second-color);
+  color: white;
+  font-weight: 700;
+}
+
+.btn-modal-services:hover {
+  background-color: var(--first-color);
+  color: var(--second-color);
+}
+
+.card-service-selected {
+  height: 2rem;
+}
 .hero-image {
   position: relative;
   background-image: url("./assets/busHeroImage2.jpg");
@@ -115,6 +129,18 @@ a:hover {
   color: var(--second-color);
 }
 
+.card-service-selected {
+  width: 86%;
+  height: 0.3rem;
+  margin: 0 auto;
+  background-color: transparent; /* Para ocultar el div por defecto */
+  display: block;
+  transition: all 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+.service-selected {
+  background-color: green;
+}
 @media (min-width: 992px) {
   .nav-item:hover {
     color: var(--first-alfa-color);
