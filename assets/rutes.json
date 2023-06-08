@@ -1,0 +1,443 @@
+{
+  "rutas": [
+    {
+      "id": "PuertoViejoToRioFrio",
+      "nombre": "Puerto a Río Frío",
+      "tipoHorario": [
+        {
+          "nombre": "Horario Regular",
+          "horarios": [
+            {
+              "id": 1,
+              "hora": "6:00 AM"
+            },
+            {
+              "id": 2,
+              "hora": "7:00 AM"
+            },
+            {
+              "id": 3,
+              "hora": "8:00 AM"
+            },
+            {
+              "id": 4,
+              "hora": "9:00 AM"
+            },
+            {
+              "id": 5,
+              "hora": "10:00 AM"
+            },
+            {
+              "id": 6,
+              "hora": "11:00 AM"
+            },
+            {
+              "id": 7,
+              "hora": "12:00 MD"
+            },
+            {
+              "id": 8,
+              "hora": "1:00 PM"
+            },
+            {
+              "id": 9,
+              "hora": "2:00 PM"
+            },
+            {
+              "id": 10,
+              "hora": "3:00 PM"
+            },
+            {
+              "id": 11,
+              "hora": "4:00 PM"
+            },
+            {
+              "id": 12,
+              "hora": "5:00 PM"
+            },
+            {
+              "id": 13,
+              "hora": "6:00 PM"
+            }
+          ]
+        },
+        {
+          "nombre": "Domingos y Feriados",
+          "horarios": [
+            {
+              "id": 1,
+              "hora": "9:00 AM"
+            },
+            {
+              "id": 2,
+              "hora": "11:00 AM"
+            },
+            {
+              "id": 3,
+              "hora": "1:00 PM"
+            },
+            {
+              "id": 4,
+              "hora": "3:00 PM"
+            },
+            {
+              "id": 5,
+              "hora": "5:00 PM"
+            }
+          ]
+        }
+      ],
+      "precio": "1130"
+    },
+    {
+      "id": "RioFrioToPuertoViejo",
+      "nombre": "Río Frío a Puerto Viejo",
+      "tipoHorario": [
+        {
+          "nombre": "Horario Regular",
+          "horarios": [
+            {
+              "id": 1,
+              "hora": "6:00 AM"
+            },
+            {
+              "id": 2,
+              "hora": "7:00 AM"
+            },
+            {
+              "id": 3,
+              "hora": "8:00 AM"
+            },
+            {
+              "id": 4,
+              "hora": "9:00 AM"
+            },
+            {
+              "id": 5,
+              "hora": "10:00 AM"
+            },
+            {
+              "id": 6,
+              "hora": "11:00 AM"
+            },
+            {
+              "id": 7,
+              "hora": "12:00 MD"
+            },
+            {
+              "id": 8,
+              "hora": "1:00 PM"
+            },
+            {
+              "id": 9,
+              "hora": "2:00 PM"
+            },
+            {
+              "id": 10,
+              "hora": "3:00 PM"
+            },
+            {
+              "id": 11,
+              "hora": "4:00 PM"
+            },
+            {
+              "id": 12,
+              "hora": "5:00 PM"
+            },
+            {
+              "id": 13,
+              "hora": "6:00 PM"
+            }
+          ]
+        },
+        {
+          "nombre": "Domingos y Feriados",
+          "horarios": [
+            {
+              "id": 1,
+              "hora": "7:00 AM"
+            },
+            {
+              "id": 1,
+              "hora": "10:00 AM"
+            },
+            {
+              "id": 1,
+              "hora": "12:00 MD"
+            },
+            {
+              "id": 1,
+              "hora": "2:00 PM"
+            },
+            {
+              "id": 1,
+              "hora": "4:00 PM"
+            }
+          ]
+        }
+      ],
+      "precio": "1130"
+    },
+    {
+      "id": "PuertoViejoToGuapiles",
+      "nombre": "Puerto Viejo a Guápiles",
+      "tipoHorario": [
+        {
+          "nombre": "Horario Regular",
+          "horarios": [
+            {
+              "id": 1,
+              "hora": "5:30 AM"
+            },
+            {
+              "id": 2,
+              "hora": "6:45 AM"
+            },
+            {
+              "id": 3,
+              "hora": "7:10 AM"
+            },
+            {
+              "id": 4,
+              "hora": "8:40 AM"
+            },
+            {
+              "id": 5,
+              "hora": "9:40 AM"
+            },
+            {
+              "id": 6,
+              "hora": "10:30 AM"
+            },
+            {
+              "id": 7,
+              "hora": "12:10 MD"
+            },
+            {
+              "id": 8,
+              "hora": "1:15 PM"
+            },
+            {
+              "id": 9,
+              "hora": "2:30 PM"
+            },
+            {
+              "id": 10,
+              "hora": "3:45 PM"
+            },
+            {
+              "id": 11,
+              "hora": "4:45 PM"
+            },
+            {
+              "id": 12,
+              "hora": "7:00 PM"
+            }
+          ]
+        },
+        {
+          "nombre": "Domingos y Feriados",
+          "horarios": [
+            {
+              "id": 1,
+              "hora": "El mismo horario"
+            }
+          ]
+        }
+      ],
+      "precio": "1820"
+    },
+    {
+      "id": "GuapilesToPuertoViejo",
+      "nombre": "Guápiles a Puerto Viejo",
+      "tipoHorario": [
+        {
+          "nombre": "Horario Regular",
+          "horarios": [
+            {
+              "id": 1,
+              "hora": "5:30 AM"
+            },
+            {
+              "id": 2,
+              "hora": "7:00 AM"
+            },
+            {
+              "id": 3,
+              "hora": "8:00 AM"
+            },
+            {
+              "id": 4,
+              "hora": "9:00 AM"
+            },
+            {
+              "id": 6,
+              "hora": "10:30 AM"
+            },
+            {
+              "id": 7,
+              "hora": "12:00 MD"
+            },
+            {
+              "id": 8,
+              "hora": "1:15 PM"
+            },
+            {
+              "id": 9,
+              "hora": "2:30 PM"
+            },
+            {
+              "id": 10,
+              "hora": "4:00 PM"
+            },
+            {
+              "id": 11,
+              "hora": "5:00 PM"
+            },
+            {
+              "id": 12,
+              "hora": "6:30 PM"
+            }
+          ]
+        },
+        {
+          "nombre": "Domingos y Feriados",
+          "horarios": [
+            {
+              "id": 1,
+              "hora": "El mismo horario"
+            }
+          ]
+        }
+      ],
+      "precio": "1820"
+    },
+    {
+      "id": "PuertoViejoToSanJose",
+      "nombre": "Puerto Viejo a San josé",
+      "tipoHorario": [
+        {
+          "nombre": "Horario Regular",
+          "horarios": [
+            {
+              "id": 1,
+              "hora": "5:00 AM Vara Blanca"
+            },
+            {
+              "id": 2,
+              "hora": "5:30 AM Zurquí"
+            },
+            {
+              "id": 3,
+              "hora": "7:30 AM Zurquí"
+            },
+            {
+              "id": 4,
+              "hora": "9:30 AM Zurquí"
+            },
+            {
+              "id": 6,
+              "hora": "11:00 AM (Pasa por Río Frío x la victoria)"
+            },
+            {
+              "id": 7,
+              "hora": "11:30 AM Vara Blanca"
+            },
+            {
+              "id": 8,
+              "hora": "1:30 PM Zurquí"
+            },
+            {
+              "id": 9,
+              "hora": "3:00 PM Zurquí (Pasa por Río Frío x la victoria)"
+            },
+            {
+              "id": 10,
+              "hora": "4:30 PM Vara Blanca"
+            },
+            {
+              "id": 11,
+              "hora": "5:30 PM Zurquí (Pasa por Río Frío x la victoria)"
+            }
+          ]
+        },
+        {
+          "nombre": "Domingos y Feriados",
+          "horarios": [
+            {
+              "id": 1,
+              "hora": "El mismo horario"
+            }
+          ]
+        }
+      ],
+      "precio": "3745"
+    },
+    {
+      "id": "SanJoseToPuertoViejo",
+      "nombre": "San José a Puerto Viejo",
+      "tipoHorario": [
+        {
+          "nombre": "Horario Regular",
+          "horarios": [
+            {
+              "id": 1,
+              "hora": "6:30 AM Vara Blanca"
+            },
+            {
+              "id": 2,
+              "hora": "6:30 AM Zurquí"
+            },
+            {
+              "id": 3,
+              "hora": "10:00 AM Zurquí"
+            },
+            {
+              "id": 4,
+              "hora": "11:30 AM Zurquí"
+            },
+            {
+              "id": 6,
+              "hora": "1:00 PM Vara Blanca"
+            },
+            {
+              "id": 7,
+              "hora": "1:30 PM Zurquí"
+            },
+            {
+              "id": 8,
+              "hora": "2:30 PM Zurquí"
+            },
+            {
+              "id": 9,
+              "hora": "3:30 PM Zurquí"
+            },
+            {
+              "id": 10,
+              "hora": "5:00 PM Vara Blanca"
+            },
+            {
+              "id": 11,
+              "hora": "5:15 PM Zurquí"
+            },
+            {
+              "id": 12,
+              "hora": "6:00 PM Zurquí"
+            }
+          ]
+        },
+        {
+          "nombre": "Domingos y Feriados",
+          "horarios": [
+            {
+              "id": 1,
+              "hora": "El mismo horario"
+            }
+          ]
+        }
+      ],
+      "precio": "3745",
+      "nota": "Pasan por Río Frío x la Victoria los que dicen Zurquí"
+    }
+  ]
+}

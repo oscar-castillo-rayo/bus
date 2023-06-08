@@ -21,6 +21,7 @@
 }
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 /* bootstrap styles */
@@ -77,7 +78,9 @@ a:hover {
   font: 1rem;
   font-weight: bold;
 }
-
+.accordion-color {
+  background-color: black;
+}
 .btn-modal-services {
   background-color: var(--second-color);
   color: white;
@@ -90,11 +93,16 @@ a:hover {
 }
 
 .card-service-selected {
-  height: 2rem;
+  width: 86%;
+  height: 0.3rem;
+  margin: 0 auto;
+  background-color: transparent; /* Para ocultar el div por defecto */
+  display: block;
+  transition: all 0.3s ease-out, background-color 0.3s ease-out;
 }
 .hero-image {
   position: relative;
-  background-image: url("./assets/busHeroImage2.jpg");
+  background-image: url("./assets/img/busHeroImage2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top 60%;
@@ -127,15 +135,6 @@ a:hover {
 }
 .nav-link:hover {
   color: var(--second-color);
-}
-
-.card-service-selected {
-  width: 86%;
-  height: 0.3rem;
-  margin: 0 auto;
-  background-color: transparent; /* Para ocultar el div por defecto */
-  display: block;
-  transition: all 0.3s ease-out, background-color 0.3s ease-out;
 }
 
 .service-selected {
