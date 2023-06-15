@@ -1,10 +1,19 @@
 const d = document,
   w = window,
   n = navigator,
-  $template = d.getElementById("accordion-template").content,
+  $templateRute = d.getElementById("rutes-template").content,
+  $templateSucursal = d.getElementById("sucursal-template").content,
   $fragment = d.createDocumentFragment(),
-  $busesInformation = d.querySelector("#bus-rutes-prices");
+  $busesInformation = d.querySelector("#bus-rutes-prices"),
+  $sucursalInformation = d.getElementById("sucursal-body"),
+  $nextBtn = d.querySelector(".next"),
+  $prevBn = d.querySelector(".prev"),
+  $slides = d.querySelectorAll(".carousel-item"),
+  $caruselCaption = d.querySelectorAll("button[data-bs-slide-to]"),
+  $logro = d.querySelector("#achievements h2");
+let i = 0;
 
+console.log("$caruselCaption :>> ", $caruselCaption);
 w.addEventListener("scroll", (e) => {
   const $fixedTop = d.querySelector(".fixed-top"),
     $navLink = d.querySelectorAll(".nav-link"),
@@ -47,7 +56,7 @@ const rutes = async () => {
     if (!res.ok) throw { status: res.status, statusText: res.statusText };
 
     json.rutas.forEach((ruta) => {
-      let $clone = $template.cloneNode(true);
+      let $clone = $templateRute.cloneNode(true);
       let horaFragment = d.createDocumentFragment();
       let tipoHorarioFragment = d.createDocumentFragment();
 
@@ -95,6 +104,37 @@ const rutes = async () => {
   }
 };
 
+const sucursals = async () => {
+  try {
+    let res = await fetch("./assets/sucursals.json"),
+      json = await res.json();
+    if (!res.ok) throw { status: res.status, statusText: res.statusText };
+    json.sucursals.forEach((el) => {
+      let $clone = $templateSucursal.cloneNode(true);
+
+      let sucursalImg = d.createElement("img");
+      sucursalImg.classList.add("mb-3");
+      sucursalImg.setAttribute("src", `${el.imgSucursal}`);
+      $clone.querySelector(".accordion-body").appendChild(sucursalImg);
+
+      const title = d.createElement("p"),
+        textContent = d.createElement("p");
+      title.classList.add("text-center");
+      title.innerHTML = `<strong>${el.titleSucursal}</strong>`;
+      textContent.innerText = `${el.descriptionSucursal}`;
+      $clone.querySelector(".accordion-body").appendChild(title);
+      $clone.querySelector(".accordion-body").appendChild(textContent);
+      $fragment.appendChild($clone);
+    });
+    $sucursalInformation.appendChild($fragment);
+  } catch (err) {
+    let messagge = err.statusText || "Ocurrió un error";
+    const messageText = d.createElement("p");
+    messageText.innerText = `<b>${err.status}: ${messagge}</b>`;
+    $sucursalInformation.outerHTML = messageText;
+  }
+};
+
 function showOverlay(card) {
   let overlay = card.previousElementSibling;
   overlay.classList.add("service-selected");
@@ -104,11 +144,6 @@ function hideOverlay(card) {
   let overlay = card.previousElementSibling;
   overlay.classList.remove("service-selected");
 }
-
-w.addEventListener("DOMContentLoaded", (e) => {
-  isMenuColapse(".navbar-toggler", ".navbar-toggler-icon");
-  rutes();
-});
 
 d.addEventListener("click", (e) => {
   if (e.target.classList.contains("accordion-header")) {
@@ -133,5 +168,66 @@ d.addEventListener("click", (e) => {
         e.classList.remove("show");
       });
     }
+  }
+});
+
+function slider() {
+  d.addEventListener("click", (e) => {
+    if (e.target === $prevBn) {
+      $slides[0].classList.remove("active");
+      $caruselCaption.forEach((el) => {
+        el.classList.remove("active");
+      });
+      i--;
+      if (i < 0) {
+        i = $slides.length - 1;
+      }
+      $slides[i].classList.add("active");
+      $caruselCaption[i].classList.add("active");
+    }
+    if (e.target === $nextBtn) {
+      e.preventDefault();
+      $slides[i].classList.remove("active");
+      $caruselCaption.forEach((el) => {
+        el.classList.remove("active");
+      });
+      i++;
+      if (i > $slides.length - 1) {
+        i = 0;
+      }
+      $slides[i].classList.add("active");
+      $caruselCaption[i].classList.add("active");
+    }
+  });
+
+  automaticChargeDiapositive();
+}
+
+function automaticChargeDiapositive() {
+  setInterval(() => {
+    $slides[i].classList.remove("active");
+    $caruselCaption.forEach((el) => {
+      el.classList.remove("active");
+    });
+    i++;
+    if (i > $slides.length - 1) {
+      i = 0;
+    }
+    $slides[i].classList.add("active");
+    $caruselCaption[i].classList.add("active");
+  }, 5000);
+}
+
+w.addEventListener("DOMContentLoaded", (e) => {
+  isMenuColapse(".navbar-toggler", ".navbar-toggler-icon");
+  rutes();
+  sucursals();
+  slider();
+
+  if (w.innerWidth < 400) {
+    $logro.innerHTML = "Logros";
+  } else {
+    $logro.innerHTML =
+      "Destacados logros de Buses del Pacífico: Expandiendo rutas y superando expectativas";
   }
 });

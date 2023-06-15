@@ -21,10 +21,25 @@
 }
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 1rem;
   overflow-x: hidden;
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+}
+html {
+  scroll-behavior: smooth;
+}
 /* bootstrap styles */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.carousel-item p,
+.carousel-item img {
+  transition: all 0.5s ease-in-out;
+}
 .navbar-brand {
   color: white;
 }
@@ -40,7 +55,17 @@ body {
   color: var(--second-alfa-color);
 }
 
+.modal-body {
+  height: 30rem;
+  overflow: auto;
+}
+.accordion-header {
+  background-color: var(--first-alfa-color);
+}
 /* own styles */
+#achievements {
+  width: 100vw;
+}
 a {
   color: var(--link-color);
   transition: all 0.3s ease-out;
@@ -141,11 +166,23 @@ a:hover {
   background-color: green;
 }
 @media (min-width: 992px) {
+  #achievements {
+    width: 70vw;
+  }
+  #services,
+  #achievements {
+    padding-top: 100px;
+    height: 100vh;
+  }
   .nav-item:hover {
     color: var(--first-alfa-color);
     background-color: transparent;
   }
   .nav-link:hover {
     color: var(--first-color);
+  }
+  .modal-body {
+    height: 40rem;
+    overflow: auto;
   }
 }

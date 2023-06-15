@@ -45,13 +45,12 @@
       <a class="btn btn-success btn-contact" href="#contact">Contáctanos</a>
     </div>
   </header>
-  <main id="services">
+  <main>
     <section class="container d-flex justify-content-evenly flex-wrap " id="services">
       <h2 class="text-center pt-5 pb-4">En Buses del Pacífico, nos enorgullece brindarte una amplia gama de
-        servicios para
-        satisfacer tus
-        necesidades
-        de transporte.</h2>
+        servicios para satisfacer tus necesidades de transporte.
+      </h2>
+      <!-- Rutes and prices -->
       <div>
         <div class="card-service-selected">
         </div>
@@ -61,9 +60,7 @@
           <div class="card-body">
             <h5 class="card-title">Rutas y precios</h5>
             <p class="card-text">Descubre nuestras diversas rutas que conectan ciudades y distintos destinos en todo el
-              país.
-              Además explora la comodidad y seguridad de
-              viajar con Buses del Pacífico a precios competitivos.
+              país. Además explora la comodidad y seguridad de viajar con Buses del Pacífico a precios competitivos.
             </p>
             <!-- Button trigger modal -->
             <a type="button" class="btn btn-modal-services mt-3 rounded-0" data-bs-toggle="modal"
@@ -84,7 +81,7 @@
                     </div>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" id="btn-close-rutes"
+                    <button type="button" class="btn btn-success" id="btn-close-rutes"
                       data-bs-dismiss="modal">Close</button>
                   </div>
                 </div>
@@ -93,9 +90,9 @@
           </div>
         </div>
       </div>
+      <!-- packages -->
       <div>
         <div class="card-service-selected">
-
         </div>
         <div class="card rounded-0 mb-5" style="width: 18rem; " onmouseover=" showOverlay(this)"
           onmouseout="hideOverlay(this)">
@@ -108,46 +105,58 @@
             </p>
             <!-- Button trigger modal -->
             <a type="button" class="btn btn-modal-services mt-3 rounded-0" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">
+              data-bs-target="#encomienda-modal">
               Leer mas...
             </a>
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <div class="modal fade" id="encomienda-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
               aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                  <div class="modal-header d-flex">
+                    <h1 class="modal-title fs-5 " id="exampleModalLabel">Servicio de encomiendas</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <div class="accordion accordion-sucursales" id="accordion-sucursales">
-                      <!-- <div class="accordion-item">
-                        <h2 class="accordion-header" id="id">
-                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Accordion Item #1
-                          </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="id"
-                          data-bs-parent="#accordion-sucursales">
+                      <div class="accordion-item">
+                        <div id="collapseOne" aria-labelledby="id" data-bs-parent="#accordion-sucursales">
                           <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                            collapse plugin adds
-                            the appropriate classes that we use to style each element. These classes control the overall
-                            appearance, as well
-                            as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-                            overriding our
-                            default variables. It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
+                            <strong>Envío seguro y confiable:</strong> Buses del Pacífico se compromete a brindar un
+                            servicio de envío seguro y confiable para las
+                            encomiendas de sus clientes. Se encargan de manejar los paquetes con cuidado y asegurar su
+                            entrega en buen estado. <br><br>
+                            <strong>Rastreo de encomiendas:</strong> Los clientes tienen la posibilidad de rastrear sus
+                            encomiendas a
+                            través de un sistema de
+                            seguimiento en línea. Esto les permite conocer el estado y la ubicación de su paquete en
+                            tiempo real, lo que brinda
+                            tranquilidad y control sobre el envío. <br><br>
+                            <strong>Amplia cobertura de destinos:</strong> Buses del Pacífico cuenta con una extensa red
+                            de rutas y
+                            sucursales, lo que les permite
+                            ofrecer una amplia cobertura de destinos para el envío de encomiendas. Los clientes pueden
+                            enviar sus paquetes a
+                            diferentes lugares dentro de las áreas que cubre la compañía. <br><br>
+                            <strong>Flexibilidad en el tamaño y peso de las encomiendas:</strong> El servicio de
+                            encomiendas de Buses del
+                            Pacífico generalmente
+                            ofrece flexibilidad en cuanto al tamaño y peso de los paquetes que se pueden enviar. Esto
+                            permite a los clientes enviar
+                            desde pequeños paquetes hasta cargas más grandes, según sus necesidades.<br><br>
+                            <strong>Tarifas competitivas:</strong> Buses del Pacífico se esfuerza por ofrecer tarifas
+                            competitivas y
+                            asequibles para el envío de
+                            encomiendas. Los precios varían según el tamaño, peso y distancia del envío, pero la
+                            compañía busca brindar opciones
+                            accesibles para sus clientes.
                           </div>
                         </div>
-                      </div> -->
+                      </div>
                     </div>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
                   </div>
                 </div>
               </div>
@@ -155,6 +164,7 @@
           </div>
         </div>
       </div>
+      <!-- sucursals -->
       <div>
         <div class="card-service-selected">
         </div>
@@ -169,84 +179,22 @@
             </p>
             <!-- Button trigger modal -->
             <a type="button" class="btn btn-modal-services mt-3 rounded-0" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">
+              data-bs-target="#sucursal-modal">
               Leer mas...
             </a>
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <div class="modal fade" id="sucursal-modal" tabindex="-1" aria-labelledby="sucursal-header"
               aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                  <div class="modal-header d-flex">
+                    <h1 class="modal-title fs-5 " id="sucursal-header">Sucursales</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body">
-                    <div class="accordion accordion-encomiendas" id="accordion-encomiendas">
-                      <!-- <div class="accordion-item">
-                        <h2 class="accordion-header" id="id">
-                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Accordion Item #1
-                          </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="id"
-                          data-bs-parent="#accordion-encomiendas">
-                          <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                            collapse plugin adds
-                            the appropriate classes that we use to style each element. These classes control the overall
-                            appearance, as well
-                            as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-                            overriding our
-                            default variables. It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
-                          </div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Accordion Item #2
-                          </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                          data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
-                            the collapse plugin
-                            adds the appropriate classes that we use to style each element. These classes control the
-                            overall appearance, as
-                            well as the showing and hiding via CSS transitions. You can modify any of this with custom
-                            CSS or overriding our
-                            default variables. It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
-                          </div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Accordion Item #3
-                          </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                          data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin
-                            adds the appropriate classes that we use to style each element. These classes control the
-                            overall appearance, as
-                            well as the showing and hiding via CSS transitions. You can modify any of this with custom
-                            CSS or overriding our
-                            default variables. It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
-                          </div>
-                        </div>
-                      </div> -->
-                    </div>
+                  <div class="modal-body" id="sucursal-body">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
                   </div>
                 </div>
               </div>
@@ -254,36 +202,73 @@
           </div>
         </div>
       </div>
-      <!-- <div class="relleno">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos alias rerum debitis, culpa fugiat ducimus, dolore
-        neque, nobis iure laudantium eum quas autem fugit voluptates nemo. Ipsa beatae dolores quam.
-        Optio, assumenda? Aspernatur nostrum reprehenderit sint esse molestias quia assumenda deleniti adipisci. Saepe
-        modi labore neque minus! Consectetur earum neque nemo odio consequuntur quas unde recusandae repellat debitis,
-        sit corrupti?
-        Facilis tempora dignissimos cum asperiores, hic odio rem suscipit omnis, ut voluptate voluptates delectus at
-        exercitationem fuga, sit similique sunt? Facilis, illo aperiam. Commodi quaerat, odit quis consectetur minima
-        ex?
-        A impedit libero amet rerum. Totam id dolorem dignissimos quos sint. Vel magnam soluta nemo. Reprehenderit
-        veritatis atque fugit quidem voluptates vitae consequuntur. Excepturi dignissimos animi itaque aspernatur in ut.
-        Est magnam, ea libero ad explicabo excepturi cum consequuntur quia cupiditate, quas perspiciatis dicta minus
-        illo eius adipisci eveniet culpa quos assumenda. Dolor velit corrupti fugit vel quae tenetur aspernatur!
-        Exercitationem quaerat maiores nemo similique laudantium adipisci dignissimos, esse ullam eius modi quidem nobis
-        ea ratione. Culpa nisi ratione veritatis recusandae provident consequatur modi eveniet nesciunt expedita a,
-        commodi magni.
-        Minima quisquam neque unde excepturi quod iste minus suscipit rerum porro vitae aspernatur voluptatum dolorum,
-        quo voluptates, quasi dolore perspiciatis iusto nobis cumque natus? Sint maiores adipisci quas reprehenderit
-        nisi.
-        Amet minus illum numquam ipsum eius, magnam quia labore. Officiis quibusdam qui dolor quis sed. Placeat,
-        mollitia autem! Eaque corrupti facere culpa natus voluptas asperiores quae beatae temporibus deleniti optio.
-        Placeat, veniam modi quos tempora amet impedit maxime culpa expedita voluptates saepe quia omnis? Velit nemo
-        illum quis autem, voluptatum incidunt harum pariatur mollitia iste error eos recusandae suscipit impedit.
-        Aut hic aliquam itaque dolores fugiat similique modi, sunt dolorem molestias doloremque quo voluptatem cum
-        aspernatur voluptate, tenetur alias eaque. Necessitatibus nulla voluptates quod non nam debitis nesciunt rerum
-        nostrum!
-      </div> -->
     </section>
-    <section class="container vh-100" id="achievements">
-      <h2>Logros</h2>
+    <section class="container vh-100 " id="achievements">
+      <h2 class="text-center m-5">
+      </h2>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/logroExpansionRuta.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Expansión de rutas</h5>
+              <p>Uno de los logros destacados de Buses del Pacífico ha sido la exitosa expansión de sus rutas. Han
+                logrado ampliar su
+                cobertura geográfica, conectando cada vez más destinos a nivel nacional. Esto
+                ha permitido a la
+                compañía brindar un servicio de transporte confiable y conveniente a una mayor cantidad de pasajeros,
+                facilitando sus
+                desplazamientos y promoviendo la conectividad entre diferentes regiones.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/logroCalidadYSeguridad.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block ">
+              <h5>Calidad y seguridad</h5>
+              <p>Buses del Pacífico se enorgullece de su compromiso con la calidad y la seguridad en sus operaciones.
+                Han logrado
+                mantener altos estándares de servicio, asegurando que los pasajeros viajen en autobuses cómodos, bien
+                mantenidos y
+                equipados. Asimismo, han implementado medidas de seguridad rigurosas para garantizar la tranquilidad de
+                los pasajeros
+                durante todo el trayecto, como controles de seguridad, monitoreo en tiempo real y personal capacitado.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/logroSatisfaccionCliente.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Satisfacción del cliente</h5>
+              <p>Otro logro importante de Buses del Pacífico es su enfoque en la satisfacción del cliente. Han trabajado
+                arduamente para
+                brindar una experiencia de viaje excepcional, atendiendo las necesidades y expectativas de sus
+                pasajeros. Gracias a la
+                calidad del servicio, la puntualidad, la atención al cliente y la resolución eficiente de problemas, han
+                logrado obtener
+                altos índices de satisfacción por parte de sus clientes, generando confianza y fidelidad hacia la
+                compañía.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
     <section class="container vh-100" id="briefcases">
       <h2>Portafolio</h2>
@@ -296,7 +281,7 @@
 
   </footer>
 
-  <template id="accordion-template">
+  <template id="rutes-template">
     <div class="accordion-item">
       <h3 class="p-2 accordion-header" id="id">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
@@ -306,6 +291,17 @@
       <div id="id" class="accordion-collapse collapse " aria-labelledby="accordion-id" data-bs-parent="#accordion-rute">
         <!--bus-accordion-->
         <div class="accordion-body">
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="sucursal-template">
+    <div class="accordion accordion-sucursales mb-2" id="accordion-sucursales">
+      <div class="accordion-item">
+        <div id="collapseOne" aria-labelledby="id" data-bs-parent="#accordion-sucursales">
+          <div class="accordion-body">
+          </div>
         </div>
       </div>
     </div>

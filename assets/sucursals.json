@@ -1,0 +1,22 @@
+{
+  "sucursals": [
+    {
+      "imgSucursal": "./assets/img/terminalSanJose.jpg",
+      "imgName": "imagen terminal San Jose",
+      "titleSucursal": "La terminal central San José",
+      "descriptionSucursal": "La Terminal Central cuenta con espacios amplios y bien distribuidos para el embarque y desembarque de pasajeros. Estas instalaciones están diseñadas para brindar comodidad y facilitar el flujo de personas, permitiendo una experiencia de viaje más cómoda y eficiente. Además de áreas de embarque y desembarque, la terminal puede contar con amplias zonas de espera, espacios para descanso, taquillas de atención al cliente y servicios complementarios, como tiendas y cafeterías. Estas instalaciones espaciosas contribuyen a crear un ambiente acogedor y funcional para los pasajeros que utilizan la Terminal Central."
+    },
+    {
+      "imgSucursal": "./assets/img/terminalSanJose.jpg",
+      "imgName": "terminalSanJose",
+      "titleSucursal": "La terminal central San José",
+      "descriptionSucursal": "La Terminal Central cuenta con espacios amplios y bien distribuidos para el embarque y desembarque de pasajeros. Estas instalaciones están diseñadas para brindar comodidad y facilitar el flujo de personas, permitiendo una experiencia de viaje más cómoda y eficiente. Además de áreas de embarque y desembarque, la terminal puede contar con amplias zonas de espera, espacios para descanso, taquillas de atención al cliente y servicios complementarios, como tiendas y cafeterías. Estas instalaciones espaciosas contribuyen a crear un ambiente acogedor y funcional para los pasajeros que utilizan la Terminal Central."
+    },
+    {
+      "imgSucursal": "./assets/img/terminalSanJose.jpg",
+      "imgName": "terminalSanJose",
+      "titleSucursal": "La terminal central San José",
+      "descriptionSucursal": "La Terminal Central cuenta con espacios amplios y bien distribuidos para el embarque y desembarque de pasajeros. Estas instalaciones están diseñadas para brindar comodidad y facilitar el flujo de personas, permitiendo una experiencia de viaje más cómoda y eficiente. Además de áreas de embarque y desembarque, la terminal puede contar con amplias zonas de espera, espacios para descanso, taquillas de atención al cliente y servicios complementarios, como tiendas y cafeterías. Estas instalaciones espaciosas contribuyen a crear un ambiente acogedor y funcional para los pasajeros que utilizan la Terminal Central."
+    }
+  ]
+}
